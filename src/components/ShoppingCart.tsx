@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useCart } from '../hooks';
-import { Card, Button } from './index';
+import { Card } from './index';
 import './ShoppingCart.css';
 
 interface ShoppingCartProps {
@@ -16,7 +16,6 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = ({
 }) => {
   const { items, totalItems, removeItem, updateQuantity, clearCart } = useCart();
   const [showConfirmClear, setShowConfirmClear] = useState(false);
-  const [isCheckoutModalOpen, setIsCheckoutModalOpen] = useState(false);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('vi-VN', {
@@ -48,7 +47,6 @@ export const ShoppingCart: React.FC<ShoppingCartProps> = ({
     if (onCheckout) {
       onCheckout();
     }
-    setIsCheckoutModalOpen(true);
   };
 
   if (items.length === 0) {

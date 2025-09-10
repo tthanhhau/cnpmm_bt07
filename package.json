@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/cart-library",
+  "name": "cnpmm-bt07-cart-library",
   "version": "1.0.0",
   "description": "A React library for shopping cart functionality with standardized components",
   "main": "dist/index.js",
@@ -22,8 +22,16 @@
     "ui-components",
     "library"
   ],
-  "author": "Your Name",
+  "author": "tthanhhau",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tthanhhau/cnpmm_bt07.git"
+  },
+  "homepage": "https://github.com/tthanhhau/cnpmm_bt07#readme",
+  "bugs": {
+    "url": "https://github.com/tthanhhau/cnpmm_bt07/issues"
+  },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

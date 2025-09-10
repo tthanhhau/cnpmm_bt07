@@ -46,7 +46,7 @@ export const Modal: React.FC<ModalProps> = ({
         className={modalContentClasses}
         onClick={(e) => e.stopPropagation()}
       >
-        {(title || onClose) && (
+        {(title || typeof onClose === 'function') && (
           <div className="cart-modal-header">
             {title && <h2 className="cart-modal-title">{title}</h2>}
             <button
